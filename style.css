@@ -89,7 +89,19 @@ input {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
+    font-weight: 600;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+    outline-color: var(--Purple);
+}
+
 input::placeholder {
     font-size: 1.5rem;
     font-weight: 800;
